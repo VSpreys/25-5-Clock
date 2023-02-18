@@ -12,9 +12,9 @@ const Break = ({ state, setState }) => {
         ...state,
         break: newTime,
         minutesLeft:
-          state.currentType === "session" ? state.minutesLeft : newTime,
-        secondsLeft: state.currentType === "session" ? state.secondsLeft : 0,
-        time: state.currentType === "session" ? state.time : `${newTime}:00`,
+          state.currentType === "Session" ? state.minutesLeft : newTime,
+        secondsLeft: state.currentType === "Session" ? state.secondsLeft : 0,
+        time: state.currentType === "Session" ? state.time : `${newTime}:00`,
       });
     }
   };

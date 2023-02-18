@@ -12,9 +12,9 @@ const Session = ({ state, setState }) => {
         ...state,
         session: newTime,
         minutesLeft:
-          state.currentType === "session" ? newTime : state.minutesLeft,
-        secondsLeft: state.currentType === "session" ? 0 : state.secondsLeft,
-        time: state.currentType === "session" ? `${newTime}:00` : state.time,
+          state.currentType === "Session" ? newTime : state.minutesLeft,
+        secondsLeft: state.currentType === "Session" ? 0 : state.secondsLeft,
+        time: state.currentType === "Session" ? `${newTime}:00` : state.time,
       });
     }
   };

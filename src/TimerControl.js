@@ -21,7 +21,7 @@ const TimerControl = ({ state, setState }) => {
       minutesLeft: 25,
       secondsLeft: 0,
       pause: true,
-      currentType: "session",
+      currentType: "Session",
     });
   }
   useEffect(() => {
@@ -37,8 +37,8 @@ const TimerControl = ({ state, setState }) => {
       intervalIdRef.current = setInterval(() => {
         if (state.time === "00:00") {
           playSound();
-          let newState = state.currentType === "session" ? "break" : "session";
-          let newTime = newState === "session" ? state.session : state.break;
+          let newState = state.currentType === "Session" ? "Break" : "Session";
+          let newTime = newState === "Session" ? state.session : state.break;
           let minutesString = newTime < 10 ? `0${newTime}` : `${newTime}`;
           let displayString = `${minutesString}:00`;
           setState({

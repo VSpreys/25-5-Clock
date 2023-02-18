@@ -13,7 +13,7 @@ function App() {
     minutesLeft: 25,
     secondsLeft: 0,
     pause: true,
-    currentType: "session",
+    currentType: "Session",
   });
   return (
     <div id="app">
